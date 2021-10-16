@@ -1,0 +1,388 @@
+*, 
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*Éléments en communs*/
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #b4b4b4;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1rem;
+	font-size: 2rem;
+	color: #000;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+	font-size: 1.6rem;
+	padding-bottom: 1rem;
+}
+
+h3 {
+	display: flex;
+	justify-content: center;
+	padding-right: 1.4rem;
+}
+
+/*Header*/
+
+.header-content {
+	width: 100%;
+	height: 4rem;
+	display: block; 
+	border: 1px solid #000;
+	background-color: #000;
+	position: fixed;
+}
+
+.nav-all {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.button-menu {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.button-menu:hover, .button-menu:focus {
+  background-color: #000;
+}
+
+.menublock {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-content {
+  visibility: hidden;
+  position: absolute;
+  background-color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.menu-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-content:hover .nav-mobile {
+	background-color: #000;
+}
+
+.navigation {
+	color : #fff;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 18px;
+}
+
+.nav {
+	padding-right: 2.5rem;
+}
+
+.nav-mobile {
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	border: 1px;
+	background-color: #000;
+	padding:16px;
+}	
+
+.button-menu:focus + .menu-content .nav-mobile { 
+	visibility: visible; 
+}
+
+#logo {
+	padding: 0;
+	max-width: 7.5rem;
+	float: left;
+	border: 1px solid #000;
+    background-color: #000;
+}
+
+#search-bar {
+	float: right;
+	padding: 8px 8px;
+    border-radius: 4px;
+    background-color: #252525;
+    color: #CCC;
+	margin-top: 0.6rem;
+	width: 16rem;
+}
+
+.document {
+	text-decoration: none;
+	color: #fff;
+}
+
+.sub-header {
+	background-color: #000000d4;
+	height: 16rem;
+	width: 100%;
+}
+
+/*Content*/
+
+.content {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: -150px;
+	padding: 36px;
+}
+
+/*Section développement*/
+
+.developpement {
+	background-color: #fff;
+	box-shadow : 0px 0px 5px 0px rgba(0,0,0,0.6);
+	border-radius: 3px;
+	margin-bottom: 0.07rem;
+}
+
+#photo-esport {
+	width: 100%;
+}
+
+#resume-esport {
+	margin: 0 auto;
+	max-width: 70rem;
+}
+
+/*Section Évolution*/
+
+.evolution {
+	background-color: #fff;
+	box-shadow : 0px 0px 5px 0px rgba(0,0,0,0.6);
+	border-radius: 3px;
+}
+
+#section-evolution {
+	color: #006daf;
+}
+
+.esport-evolve {
+	display: flex;
+	flex-direction: row;
+}
+
+#titre1 {
+	padding-right: 6rem;
+}
+
+#photo-debut-esport {
+	width: 77%;
+}
+
+.debut {
+	width: 33.33%;
+	display: flex;
+	padding-left: 0.5rem;
+	flex-direction: column;
+}
+
+#resume-debut {
+	padding-top: 2rem;
+	font-size: 0.8rem;
+	width: 76%;
+}
+
+#photo-agedor-esport {
+	width: 90.7%;
+}
+
+.agedor {
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+}
+
+#resume-agedor {
+	font-size: 0.8rem;
+	padding-top: 2rem;
+	width: 91%;
+}
+
+#photo-aujourdhui{
+	width: 92.1%;
+}
+
+.continuite {
+	width: 33.33%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+}
+
+#resume-aujourdhui {
+	font-size: 0.8rem;
+	padding-top: 2rem;
+	width: 92%;
+}
+
+/*Section Partenariat*/
+
+#section-partenariat {
+	color: #d90707 ;
+}
+
+.photo-partenariat {
+	width: 30%;
+}
+
+.partenariat {
+	background-color: #fff;
+	box-shadow : 0px 0px 5px 0px rgba(0,0,0,0.6);
+	border-radius: 3px;
+}
+
+#partenariat-text {
+	max-width: 65rem;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+}
+
+.images-sponso {
+	display: flex;
+	justify-content: space-between;
+	padding: 0rem 1rem;
+}
+
+/*Section Coulisses*/
+
+.coulisses {
+	background-color: #fff;
+	box-shadow : 0px 0px 5px 0px rgba(0,0,0,0.6);
+	border-radius: 3px;
+}
+
+.coulisses-text {
+	max-width: 70rem;
+	margin: 0 auto;
+	padding-bottom: 1rem;
+}
+
+.text-drama {
+	padding-bottom: 1rem;
+}
+
+.photo-coulisses {
+	display: flex;
+	justify-content: center;
+}
+
+/*Section triche*/
+
+.triche {
+	background-color: #fff;
+	box-shadow : 0px 0px 5px 0px rgba(0,0,0,0.6);
+	border-radius: 3px;
+}
+
+#section-triche {
+	color: #006daf;
+}
+
+.triche-esport {
+	display: flex;
+	flex-direction: column;
+}
+
+.triche-logiciel {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 1rem;
+}
+
+#forsaken-photo {
+	width: 33.33%;
+	padding-right: 1rem;
+}
+
+.triche-medicament {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 1rem;
+}
+
+#adderall-photo {
+	width: 33.33%;
+	padding-right: 1rem;
+}
+
+/*Section carrieres*/
+
+.carrieres {
+	background-color: #fff;
+	box-shadow : 0px 0px 5px 0px rgba(0,0,0,0.6);
+	border-radius: 3px;
+}
+
+#section-carrieres {
+	color: #d90707;
+}
+
+.carrieres-esport {
+	padding-left: 1rem;
+}
+
+#carrieres-photo {
+	float: right;
+	width: 50%;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 30rem) {
+	.navigation {display: none;}
+	.nav-mobile {visibility: hidden;}
+	.content {padding: 0px;}
+	#search-bar {max-width: 13rem;}
+	#section-developpement {font-size: 2rem;}
+	h2 {font-size: 1.6rem;}
+	.continuite {padding-left: 1rem; padding-top: 1rem;}
+	#photo-drama {width: 100%;}
+	#section-carrieres {font-size: 1.5rem;}
+}
+
+@media screen and (max-width: 50rem) {
+	.nav-all {justify-content: normal;}
+	.navigation {display: none;}
+	.button-menu {visibility: visible; padding: 18px;}
+	#search-bar {width: 29.5rem;}
+	h1 {font-size: 3rem;}
+	h2 {font-size: 2rem;}
+	h3 {font-size: 1rem;}
+	#titre1 {padding-right: 3.5rem;}
+	.images-sponso {padding: 0rem}
+	.triche-logiciel { flex-direction: column;}
+	#forsaken-photo {width: 100%; padding-right: 0rem;}
+	.triche-medicament {flex-direction: column;}
+	#adderall-photo {width: 100%; padding-right: 0rem;}
+	.carrieres-esport {padding: 0rem;}
+}
